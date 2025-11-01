@@ -1,0 +1,7 @@
+onlyBuiltDependencies:
+  - "@tailwindcss/oxide"
+  - bcrypt
+  - electron
+  - esbuild
+  - sqlite3
+  - electron-winstaller

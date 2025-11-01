@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo/black.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval';
+        style-src 'self' 'unsafe-inline' https://fonts.cdnfonts.com;
+        img-src 'self' * data: blob:;
+        font-src 'self' https://fonts.cdnfonts.com data:;
+        connect-src 'self' * data: blob:;
+        media-src 'self' * data: blob:;
+        object-src 'none';
+        base-uri 'self';
+      "
+    />
+    <title>Skartisanal</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
