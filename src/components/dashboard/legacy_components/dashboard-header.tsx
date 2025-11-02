@@ -6,7 +6,7 @@ export default function DashboardHeader() {
       <div>
         <SectionTitle>Tableau de bord</SectionTitle>
         <p className="text-gray-600 mt-1">
-          Vue d'ensemble de votre activité artisanale
+          Vue d'ensemble de votre activité et statistiques clés.
         </p>
       </div>
     </div>

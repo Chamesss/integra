@@ -3,7 +3,7 @@ export const JWT_SECRET =
 export const EXPIRES = "100d";
 
 export const WOO_CONFIG = {
-  baseURL: "https://www.skartisanal.com",
+  baseURL: "https://www.integra.com",
   consumerKey: "ck_5b8ad77cd395f8bdef8a2587e37640f81755dd53",
   consumerSecret: "cs_96735ea702ce323b8391c302311e094d5db76366",
   username: "aichaska",

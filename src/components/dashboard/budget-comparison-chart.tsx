@@ -8,7 +8,6 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import { formatCurrency } from "@/utils/text-formatter";
 import { CustomTick } from "./custom-tick";
 import { CustomTooltip } from "./custom-tooltip";
 
@@ -29,7 +28,7 @@ export default function BudgetComparisonChart({
 }: BudgetComparisonChartProps) {
   if (loading) {
     return (
-      <Card className="border-0 shadow-sm">
+      <Card className="border shadow-none">
         <CardHeader className="flex flex-row items-center justify-between pb-4">
           <div className="h-6 w-48 bg-muted rounded animate-pulse" />
           <div className="flex items-center gap-4">
@@ -59,7 +58,7 @@ export default function BudgetComparisonChart({
         ];
 
   return (
-    <Card className="border-0 shadow-sm">
+    <Card className="border shadow-none">
       <CardHeader className="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-3 sm:pb-4 space-y-2 sm:space-y-0">
         <CardTitle className="text-base sm:text-lg font-semibold">
           Comparaison Devis vs Factures

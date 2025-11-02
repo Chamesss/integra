@@ -7,8 +7,8 @@ const __dirname = path.dirname(__filename);
 const config = {
   packagerConfig: {
     asar: false,
-    name: "Skartisanal",
-    executableName: "Skartisanal",
+    name: "Integra",
+    executableName: "Integra",
     icon: "./build/logo",
     prune: true,
     ignore: [
@@ -29,7 +29,7 @@ const config = {
       name: "@electron-forge/maker-zip",
       platforms: ["win32"],
       config: {
-        name: "Skartisanal-Win",
+        name: "Integra-Win",
       },
     },
     // {
@@ -116,8 +116,8 @@ const config = {
       name: "@electron-forge/publisher-github",
       config: {
         repository: {
-          owner: "QuetraTechOrg",
-          name: "skartisanal",
+          owner: "Chamesss",
+          name: "integra",
         },
       },
     },

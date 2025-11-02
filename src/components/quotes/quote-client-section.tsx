@@ -202,7 +202,7 @@ export default function QuoteClientSection({
                   value={searchQuery}
                   onChange={handleInputChange}
                   onClick={handleInputClick}
-                  className="pl-10 !text-[0.8rem] pr-10 h-12 border-2 border-gray-200 focus:border-primary/20 rounded-lg transition-colors"
+                  className="pl-10 text-[0.8rem]! pr-10 h-12 border-2 border-gray-200 focus:border-primary/20 rounded-lg transition-colors"
                 />
                 <ChevronDown
                   className={`absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 transition-transform ${

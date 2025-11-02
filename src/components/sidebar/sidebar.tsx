@@ -22,8 +22,8 @@ export default function SideBar() {
   return (
     <div
       className={cn(
-        "h-screen bg-green-pale w-[4rem] shrink-0 flex-col justify-between border-r transition-all dark:bg-stone-900 md:flex xl:relative xl:w-[15rem]",
-        { "w-[15rem]": expend }
+        "h-screen bg-blue-dark w-16 shrink-0 flex-col justify-between border-r transition-all dark:bg-stone-900 md:flex xl:relative xl:w-60",
+        { "w-60": expend }
       )}
     >
       <div className="mt-3 flex w-full flex-row items-center justify-between px-2 py-2.5 xl:px-4 xl:py-4">
@@ -35,7 +35,7 @@ export default function SideBar() {
         >
           <img
             className={cn(
-              "mb-1 ml-3 h-7 w-0 overflow-hidden object-contain xl:h-7 xl:w-auto",
+              "mb-1 ml-3 h-10! w-auto overflow-hidden object-contain xl:h-7 xl:w-auto",
               expend && "w-fit"
             )}
             src={companyInfo.logoSecondary}
@@ -45,8 +45,8 @@ export default function SideBar() {
         <Menu
           onClick={() => setExpend((prev) => !prev)}
           className={cn(
-            "block h-8 w-8 translate-x-[-10px] cursor-pointer self-center rounded-xl px-1.5 py-1 transition-all hover:bg-black/5 hover:dark:bg-white/10 xl:hidden",
-            expend && "w-fit translate-x-[0px]"
+            "block h-8 w-8 -translate-x-2.5 cursor-pointer self-center rounded-xl px-1.5 py-1 transition-all hover:bg-black/5 hover:dark:bg-white/10 xl:hidden",
+            expend && "w-fit translate-x-0"
           )}
         />
       </div>

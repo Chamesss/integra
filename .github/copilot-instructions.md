@@ -1,8 +1,8 @@
-# Ska Artisanal - AI Coding Agent Instructions
+# Integra - AI Coding Agent Instructions
 
 ## Architecture Overview
 
-**Ska Artisanal** is an Electron-based desktop application for managing artisanal business operations, built with TypeScript + React frontend and Electron backend.
+**Integra** is an Electron-based desktop application for managing artisanal business operations, built with TypeScript + React frontend and Electron backend.
 
 ### Project Structure
 

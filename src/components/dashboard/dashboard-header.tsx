@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Calendar } from "lucide-react";
 
 export default function DashboardHeader() {
@@ -17,18 +16,12 @@ export default function DashboardHeader() {
           Vue d'ensemble détaillée de votre situation financière
         </p>
       </div>
-      <div className="flex items-center gap-2 sm:gap-3">
-        <Button
-          variant="outline"
-          size="sm"
-          className="gap-2 capitalize text-xs sm:text-sm"
-        >
-          <Calendar className="h-3 w-3 sm:h-4 sm:w-4" />
-          <span className="hidden sm:inline">{currentMonth}</span>
-          <span className="sm:hidden">
-            {new Date().toLocaleDateString("fr-FR", { month: "short" })}
-          </span>
-        </Button>
+      <div className="flex items-center text-sm capitalize bg-white py-2 px-3 font-semibold rounded-sm border gap-2 sm:gap-3">
+        <Calendar className="h-3 w-3 sm:h-4 sm:w-4" />
+        <span className="hidden sm:inline">{currentMonth}</span>
+        <span className="sm:hidden">
+          {new Date().toLocaleDateString("fr-FR", { month: "short" })}
+        </span>
       </div>
     </div>
   );

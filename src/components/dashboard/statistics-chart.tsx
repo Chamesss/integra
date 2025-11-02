@@ -45,7 +45,7 @@ export default function StatisticsChart({ stats }: StatisticsChartProps) {
     : [{ name: "Aucune donnée", value: 1, color: "#e2e8f0" }];
 
   return (
-    <Card className="border-0 shadow-sm flex-1 flex">
+    <Card className="border shadow-none flex-1 flex">
       <CardHeader className="flex flex-row items-center justify-between pb-3 sm:pb-4">
         <CardTitle className="text-base sm:text-lg font-semibold">
           Statistiques des Devis

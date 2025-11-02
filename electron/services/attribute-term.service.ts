@@ -234,7 +234,7 @@ export class AttributeTermService extends CoreService<
             );
           }
         } catch (error: any) {
-          console.warn(
+          logger.warn(
             `Failed to delete attribute term ${id} from WooCommerce:`,
             error?.message || error
           );

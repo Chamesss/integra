@@ -2,6 +2,7 @@ import { IResult } from "../types/core.types";
 import { Op } from "sequelize";
 import { Invoice } from "../models/invoice";
 import { Quote } from "../models/quote";
+import { logger } from "../utils/logger";
 
 interface MonthlyData {
   month: string;
@@ -88,15 +89,13 @@ export class AnalyticsService {
         });
       }
 
-      console.log("Monthly revenue data generated:", monthlyData);
-
       return {
         success: true,
         data: monthlyData,
         message: "Monthly revenue data retrieved successfully",
       };
     } catch (error) {
-      console.error("Error getting monthly revenue:", error);
+      logger.error("Error getting monthly revenue:", error);
       return {
         success: false,
         error: "Failed to retrieve monthly revenue data",
@@ -158,15 +157,13 @@ export class AnalyticsService {
         });
       }
 
-      console.log("Monthly comparison data generated:", monthlyData);
-
       return {
         success: true,
         data: monthlyData,
         message: "Monthly comparison data retrieved successfully",
       };
     } catch (error) {
-      console.error("Error getting monthly comparison:", error);
+      logger.error("Error getting monthly comparison:", error);
       return {
         success: false,
         error: "Failed to retrieve monthly comparison data",
@@ -240,7 +237,7 @@ export class AnalyticsService {
         message: "Analytics summary retrieved successfully",
       };
     } catch (error) {
-      console.error("Error getting analytics summary:", error);
+      logger.error("Error getting analytics summary:", error);
       return {
         success: false,
         error: "Failed to retrieve analytics summary",

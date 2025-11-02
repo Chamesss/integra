@@ -3,9 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "author": "Quetratech",
-  "description": "Skartisanal",
-  "productName": "Skartisanal",
+  "author": "Chamsedin Azouz",
+  "description": "Integra Desktop Application",
+  "productName": "Integra",
   "scripts": {
     "dev": "electron-forge start",
     "build": "electron-forge package",

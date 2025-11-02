@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Building2, Calendar } from "lucide-react";
+import { Building2, Clock } from "lucide-react";
 import { useEffect, useState } from "react";
 
 interface UserInfo {
@@ -35,7 +35,7 @@ export default function DashboardGreeting() {
     // Update time every minute
     const timer = setInterval(() => {
       setCurrentTime(new Date());
-    }, 60000);
+    }, 1000);
 
     return () => clearInterval(timer);
   }, []);
@@ -83,14 +83,14 @@ export default function DashboardGreeting() {
           {/* Quick Info Section */}
           <div className="flex flex-col sm:items-end gap-2">
             <div className="flex items-center gap-2 text-sm">
-              <Calendar className="h-4 w-4 text-violet-500" />
+              <Clock className="h-4 w-4 text-violet-500" />
               <span className="font-medium">{formatTime()}</span>
             </div>
 
             {/* Company Info (if needed, can be populated from settings) */}
             <div className="flex items-center gap-2 text-xs text-muted-foreground">
               <Building2 className="h-3.5 w-3.5" />
-              <span>Ska Artisanal</span>
+              <span>Integra</span>
             </div>
           </div>
         </div>

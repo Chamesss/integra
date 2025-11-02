@@ -133,7 +133,7 @@ export class CategoryService extends CoreService<Category, any, any, any> {
           }
 
           if (progress === 0) {
-            console.warn(
+            logger.warn(
               "No progress made in category processing, breaking loop"
             );
             break;
